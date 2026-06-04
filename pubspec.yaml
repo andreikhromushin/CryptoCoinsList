@@ -1,15 +1,17 @@
 name: crypto_coins_list
 description: "A new Flutter project."
 publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.10.7
+  sdk: 3.12.1
+  flutter: 3.44.1
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: 1.0.8
+  cupertino_icons: 1.0.9
 
 dev_dependencies:
   flutter_test:
