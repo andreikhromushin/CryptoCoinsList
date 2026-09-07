@@ -1,12 +1,20 @@
 include: package:flutter_lints/flutter.yaml
 
 analyzer:
-  errors:
-    prefer_relative_imports: ignore
+  exclude:
+    - '**/*.g.dart'
+    - build/**
+    - android/**
+    - ios/**
 
 linter:
   rules:
-    prefer_relative_imports: false
-    always_use_package_imports: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+    # Mixing relative and `package:` imports lets Dart load one file under two
+    # URIs, duplicating singletons and static state. The opposite direction is
+    # covered by avoid_relative_lib_imports from flutter_lints.
+    prefer_relative_imports: true
     require_trailing_commas: true
     avoid_print: true
