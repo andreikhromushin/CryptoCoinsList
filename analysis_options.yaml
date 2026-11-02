@@ -16,5 +16,6 @@ linter:
     # URIs, duplicating singletons and static state. The opposite direction is
     # covered by avoid_relative_lib_imports from flutter_lints.
     prefer_relative_imports: true
+    directives_ordering: true
     require_trailing_commas: true
     avoid_print: true
